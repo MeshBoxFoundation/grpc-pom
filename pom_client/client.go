@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/MeshBoxFoundation/grpc-pom/greetpb"
+	"github.com/spencermeta/proto-example/greet/greetpb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials/insecure"
