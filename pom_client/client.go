@@ -14,10 +14,6 @@ import (
 )
 
 func main() {
-	/*	creds, err := credentials.NewClientTLSFromFile("certs/ca.crt", "")
-		if err != nil {
-			log.Fatalf("Error while loading certificates: %v", err.Error())
-		}*/
 
 	cc, err := grpc.Dial("localhost:50051", grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {

@@ -130,10 +130,6 @@ func (s *server) GreetEveryone(stream greetpb.GreetService_GreetEveryoneServer) 
 func main() {
 	fmt.Println("Greet server invoked!")
 
-	/*	creds, err := credentials.NewServerTLSFromFile("certs/server.crt", "certs/server.pem")
-		if err != nil {
-			log.Fatalf("Failed loading certificates: %s", err.Error())
-		}*/
 	listener, err := net.Listen("tcp", "0.0.0.0:50051")
 
 	if err != nil {
